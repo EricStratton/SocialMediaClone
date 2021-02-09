@@ -12,14 +12,13 @@ const userProfile = [
 function User() {
   return (
     <>
-    <hr />
     {userProfile.map((userInfo, index) =>
       <UserInfo
         name={userInfo.name}
         key={index}
         />
     )}
-    {userProfile.map((userBio, index) => 
+    {userProfile.map((userBio, index) =>
         <UserBio
           bio={userBio.bio}
           key={index}
